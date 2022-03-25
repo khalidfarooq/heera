@@ -40,10 +40,11 @@ export default function SideMenu({setOpenSideMenu, openSideMenu, setBackgroundCo
                   style={{
                     backgroundImage: 'url(https://colordesigner.io/promo/color-palettes/warm.png)',
                     backgroundRepeat: 'no-repeat',
-                    backgroundSize : 'cover'
+                    backgroundSize : 'cover',
+                    fontSize: '2rem',
                   }}
                   onClick={()=>setOptionColor(true)}
-              ></div>
+              >Colors</div>
           </div>
           <Grow in={openOptionColor}>
             <div className={classes.optionContainer}>
