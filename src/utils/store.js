@@ -1,15 +1,15 @@
 const cards = [
   {
     id: 'card-1',
-    title: 'Learning how to cook',
+    title: 'Make frontend responsive',
   },
   {
     id: 'card-2',
-    title: 'Making sandwich',
+    title: 'Do unit testing',
   },
   {
     id: 'card-3',
-    title: 'Taking the trash out',
+    title: 'Deploy the web application',
   },
 ];
 
