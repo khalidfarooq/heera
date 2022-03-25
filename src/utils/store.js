@@ -27,7 +27,7 @@ const data = {
     },
     'list-3': {
       id: 'list-3',
-      title: 'IN PROGRESS,',
+      title: 'IN PROGRESS',
       cards : [],
     },
     'list-4': {
