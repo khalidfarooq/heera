@@ -73,7 +73,7 @@ export default function App() {
   };
   const onDragEnd = (result) => {
     const { destination, source, draggableId } = result;
-    //console.log('destination', destination, 'source', source, draggableId);
+    console.log('destination', destination, 'source', source, draggableId);
     if(!destination){
       return;
     }
@@ -93,6 +93,19 @@ export default function App() {
         lists: {
           ...data.lists,
           [sourceList.id]: destinationList,
+        },
+      };
+      setData(newSate);
+    }else{
+      sourceList.cards.splice(source.index, 1);
+      destinationList.cards.splice(destination.index, 0, draggingCard);
+
+      const newSate = {
+        ...data,
+        lists: {
+          ...data.lists,
+          [sourceList.id]: sourceList,
+          [destinationList.id] : destinationList
         },
       };
       setData(newSate);
