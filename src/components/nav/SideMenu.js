@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Drawer, Grow, Divider } from '@material-ui/core';
+import { Drawer, Grow, Divider,Button } from '@material-ui/core';
 import colors from '../../utils/colors';
 
 const useStyle = makeStyles((theme) => ({
@@ -32,7 +32,8 @@ export default function SideMenu({setOpenSideMenu, openSideMenu, setBackgroundCo
   const [openOptionColor, setOptionColor] = useState(false)
   return (
     <div >
-      <Drawer open={openSideMenu} anchor='right' onClose={()=>setOpenSideMenu(false)}>
+      <Drawer open={openSideMenu} anchor='right'>
+        <Button style={{backgroundColor:"lightgrey"}} onClick={()=>setOpenSideMenu(false)}>Close</Button>
         <div className={classes.drawer}>
           <div className={classes.menu}>
               {/* <div className={classes.box}></div> */}
